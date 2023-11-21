@@ -1,6 +1,6 @@
 import { useState,useEffect } from 'react';
 import logo from '../assets/mfonsuit.png'
-import { GiHamburgerMenu } from "react-icons/gi";
+
 const Home = () => {
 
   const [text,setText] = useState()
@@ -15,23 +15,23 @@ const updateText = () => {
         clearInterval(intervalId);
         setTimeout(() => {
           setText('');
-          updateText(); // Restart the animation
-        }, 2000); // Adjust the delay before restarting (milliseconds)
+          updateText(); 
+        }, 2000);
       }
-    }, 100); // Adjust the typing speed (milliseconds)
+    }, 100); 
 
     return () => clearInterval(intervalId);
   };
 
   useEffect(() => {
-    updateText(); // Start the animation initially
+    updateText();
   }, []);
   return(
-    <div className='flex  flex-col md:flex-row border-1 px-10'>
+    <div className=' flex  flex-col md:flex-row border-1 px-10'>
     <div className='flex-1 flex justify-center flex-col'>
       <h5 className='text-2xl font-bold '>Hello there...</h5>
       <h1 className='text-4xl font-bold mt-4'>PAULINUS MFON</h1>
-      <div className="text-2xl font-semi-bold ">
+      <div className="text-2xl font-semi-bold mt-4">
       I'm a passionate {text}
     </div>
 
@@ -42,15 +42,9 @@ const updateText = () => {
         <button className='mr-3 border border-red-500 text-md py-3 px-4 font-semibold text-orange-500'>HIRE ME</button>
       </div>
     </div>
-      <div className='flex -1 mt-4'>
+      <div className='flex-1 mt-4'>
       <img src={logo} className='h-auto max-w-full  p-0 block'/>
       </div>
-
-              
-           
-     
-     
-      
     </div>
   )
 }

@@ -31,8 +31,7 @@ const handleClick =()=>{
     <div className=''>
       <nav
         className={`${
-          navBar ? 'bg-black' : 'sticky'
-        }  h-16  text-white px-10 md:px-20 flex justify-between items-center`}
+          navBar ? 'bg-blue-200 text-white shadow-sm z-1 sticky h-16 top-0 text-white px-10 md:px-20 flex justify-between items-center' : 'sticky h-16  text-white px-10 md:px-20 flex justify-between items-center top-0'}`}
       >
         <Link to="/home" className="md:text-4xl text-black font-semibold">
           MFON
@@ -58,10 +57,10 @@ const handleClick =()=>{
       </nav>
       {click && <Dropdown/>}
       {/* <Outlet /> */}
-      <section className='mt-16'>
+      <section className='mt-16  '>
         <Home/>
       </section>
-      <section className='pt-10'>
+      <section className='pt-24'>
         <AboutMe/>
       </section>
     </div>

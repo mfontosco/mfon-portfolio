@@ -27,23 +27,23 @@ const updateText = () => {
     updateText();
   }, []);
   return(
-    <div className=' flex  flex-col md:flex-row border-1 px-10'>
+    <div className=' flex  flex-col md:flex-row border-1 px-10 md:px-20 min-h-screen '>
     <div className='flex-1 flex justify-center flex-col'>
-      <h5 className='text-2xl font-bold '>Hello there...</h5>
+      <h5 className='text-md font-bold '>Hello there...</h5>
       <h1 className='text-4xl font-bold mt-4'>PAULINUS MFON</h1>
-      <div className="text-2xl font-semi-bold mt-4">
+      <div className="text-xl font-semi-bold mt-4">
       I'm a passionate {text}
     </div>
 
 
-      <p className='text-lg font-normal mt-4 '>The namics of how users interact with interactive elements within a user <br/> interface flow chart based on container proportion.</p>
+      <p className=' mt-4 '>The namics of how users interact with interactive elements within a user  interface flow chart based on container proportion.</p>
       <div className='mt-4'>
-        <button className='bg-orange-500 mr-3 text-md py-3 px-4 font-semibold text-white'>MY WORK</button>
+        <button className='bg-orange-500 mr-3 text-sm py-3 px-4  text-white'>MY WORK</button>
         <button className='mr-3 border border-red-500 text-md py-3 px-4 font-semibold text-orange-500'>HIRE ME</button>
       </div>
     </div>
-      <div className='flex-1 mt-4'>
-      <img src={logo} className='h-auto max-w-full  p-0 block'/>
+      <div className='flex-1 flex justify-center items-center mt-4 shadow-sm rounded-md'>
+      <img src={logo} className=''/>
       </div>
     </div>
   )

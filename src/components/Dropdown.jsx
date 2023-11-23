@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const Dropdown = () => {
   return (
-    <div className='min-h-screen bg-black text-white'>
+    <div className='min-h-screen bg-black text-white w-screen'>
        <div className="md:hidden flex items-center flex-col justify-center gap-6">
             <Link to="" className=" mt-6 uppercase text-white block font-semibold">
               About

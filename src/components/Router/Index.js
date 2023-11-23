@@ -1,3 +1,4 @@
 import NavBar from "../NavBar";
+import AboutMe from "../AboutMe";
 
-export {NavBar}
+export {NavBar,AboutMe}

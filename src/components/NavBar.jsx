@@ -3,13 +3,15 @@ import { Link, Outlet } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import {FaTimes} from 'react-icons/fa'
 import Dropdown from './Dropdown';
+import Home from './Home';
+import AboutMe from './AboutMe';
 
 const NavBar = () => {
   const [navBar, setNavBar] = useState(false);
   const [click,setClick] = useState(false)
 
   const changeBackground = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 20) {
       setNavBar(true);
     } else {
       setNavBar(false);
@@ -26,11 +28,11 @@ const handleClick =()=>{
   }, []);
 
   return (
-    <div>
+    <div className=''>
       <nav
         className={`${
           navBar ? 'bg-black' : 'sticky'
-        } md:h-24 h-16 px-6 text-white flex justify-between items-center`}
+        }  h-16  text-white px-10 md:px-20 flex justify-between items-center`}
       >
         <Link to="/home" className="md:text-4xl text-black font-semibold">
           MFON
@@ -38,7 +40,7 @@ const handleClick =()=>{
         <div className="">
           {click ? <FaTimes onClick={handleClick} className='text-black md:hidden block cursor-pointer '/>:<GiHamburgerMenu className="text-black md:hidden block cursor-pointer" onClick={handleClick} />}
           <div className="hidden md:flex items-center justify-center gap-4">
-            <Link to="" className="uppercase text-black font-semibold">
+            <Link to="about" className="uppercase text-black font-semibold">
               About
             </Link>
             <Link to="" className="uppercase text-black font-semibold">
@@ -55,7 +57,13 @@ const handleClick =()=>{
 
       </nav>
       {click && <Dropdown/>}
-      <Outlet />
+      {/* <Outlet /> */}
+      <section className='mt-16'>
+        <Home/>
+      </section>
+      <section className='pt-10'>
+        <AboutMe/>
+      </section>
     </div>
   );
 };

@@ -14,7 +14,7 @@ const NavBar = () => {
   const [click,setClick] = useState(false)
 
   const changeBackground = () => {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 90) {
       setNavBar(true);
     } else {
       setNavBar(false);
@@ -34,7 +34,7 @@ const handleClick =()=>{
     <div className=''>
       <nav
         className={`${
-          navBar ? 'bg-blue-200 text-white shadow-sm z-40 sticky h-16 top-0 text-white px-5 md:px-20 flex justify-between items-center' : 'sticky h-16  text-white px-10 md:px-20 flex justify-between items-center top-0'}`}
+          navBar ? 'bg-orange-50 text-white shadow-sm z-40 sticky h-16 top-0 text-white px-5 md:px-20 flex justify-between items-center' : 'sticky h-16  text-white px-10 md:px-20 flex justify-between items-center top-0'}`}
       >
         <Link to="/home" className="md:text-4xl text-black font-semibold">
           MFON

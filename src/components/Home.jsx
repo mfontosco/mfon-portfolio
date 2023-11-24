@@ -27,7 +27,7 @@ const updateText = () => {
     updateText();
   }, []);
   return(
-    <div className=' flex  flex-col md:flex-row border-1 px-10 md:px-20 min-h-screen '>
+    <div className='relative flex  flex-col md:flex-row border-1 px-5 md:px-20 min-h-screen '>
     <div className='flex-1 flex justify-center flex-col'>
       <h5 className='text-md font-bold '>Hello there...</h5>
       <h1 className='text-4xl font-bold mt-4'>PAULINUS MFON</h1>
@@ -42,9 +42,15 @@ const updateText = () => {
         <button className='mr-3 border border-red-500 text-md py-3 px-4 font-semibold text-orange-500'>HIRE ME</button>
       </div>
     </div>
-      <div className='flex-1 flex justify-center items-center mt-4 shadow-sm rounded-md'>
+      <div className='relative flex-1 flex justify-center items-center mt-4 shadow-sm rounded-md'>
+      <div className='flex flex-col relative'>
       <img src={logo} className=''/>
+       <div className='w-full flex justify-center relative bottom-500'>
+          <button className='animate-bounce absolute '> + </button>
       </div>
+      </div>
+      </div>
+     
     </div>
   )
 }

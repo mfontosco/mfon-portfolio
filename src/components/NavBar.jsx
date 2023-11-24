@@ -5,6 +5,9 @@ import {FaTimes} from 'react-icons/fa'
 import Dropdown from './Dropdown';
 import Home from './Home';
 import AboutMe from './AboutMe';
+import Services from './Services';
+import LatestWork from './LatestWork';
+import Contact from './Contact';
 
 const NavBar = () => {
   const [navBar, setNavBar] = useState(false);
@@ -31,7 +34,7 @@ const handleClick =()=>{
     <div className=''>
       <nav
         className={`${
-          navBar ? 'bg-blue-200 text-white shadow-sm z-1 sticky h-16 top-0 text-white px-10 md:px-20 flex justify-between items-center' : 'sticky h-16  text-white px-10 md:px-20 flex justify-between items-center top-0'}`}
+          navBar ? 'bg-blue-200 text-white shadow-sm z-40 sticky h-16 top-0 text-white px-5 md:px-20 flex justify-between items-center' : 'sticky h-16  text-white px-10 md:px-20 flex justify-between items-center top-0'}`}
       >
         <Link to="/home" className="md:text-4xl text-black font-semibold">
           MFON
@@ -62,6 +65,17 @@ const handleClick =()=>{
       </section>
       <section className='pt-24'>
         <AboutMe/>
+      </section>
+      <section className='pt-10'>
+        <Services/>
+      </section>
+      <section className='pt-10'>
+        <LatestWork
+        />
+      </section>
+      <section className='pt-10'>
+        <Contact
+        />
       </section>
     </div>
   );

@@ -1,6 +1,6 @@
 import { Route,Routes } from 'react-router-dom'
-import NavBar from '../NavBar'
-import Home from '../Home'
+import NavBar from '../components/NavBar'
+import Home from '../components/Home'
 import {AboutMe} from './Index'
 
 const Router = () => {

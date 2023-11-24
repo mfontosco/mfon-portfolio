@@ -10,7 +10,7 @@ const LatestWork = () => {
     <div className=' min-h-screen px-5 md:px-20 pt-5'>
       <h2 className="uppercase text-2xl font-bold mb-3">LATEST WORKS</h2>
       <p className="uppercase text-md tracking-widest">A Software Developer Based in Nigeria</p>
-      <div className="flex flex-wrap -mx-2 gap-3 mt-10">
+      <div className="flex flex-wrap justify-center items-center -mx-2 gap-3 mt-10">
         <WorkCard icon={plax}/>
         <WorkCard icon={arcp}/>
         <WorkCard icon={admin}/>

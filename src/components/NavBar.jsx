@@ -66,10 +66,13 @@ const handleClick =()=>{
       <section className='pt-24'>
         <AboutMe/>
       </section>
-      <section className='pt-10'>
+      <section className='h-screen flex justify-center items-center'>
+        <h2 className='text-2xl py-4'>Something Goes Here...</h2>
+      </section>
+      <section className=''>
         <Services/>
       </section>
-      <section className='pt-10'>
+      <section className='pt-10 '>
         <LatestWork
         />
       </section>

@@ -8,12 +8,12 @@ const Services = () => {
       <p className="uppercase text-md tracking-widest">A Software Developer Based in Nigeria</p>
       <div className="mt-10">
         <div className="flex gap-6 justify-center items-center flex-wrap -mx-2 ">
-            <ServiceCard title={"Unique Design"}/>
-            <ServiceCard title={"Responsive Design"}/>
-            <ServiceCard title={"Different Layout"}/>
-            <ServiceCard title={"Make it simple"}/>
-            <ServiceCard title={"Testing for Perfection"}/>
-            <ServiceCard title={"Advanced Options"}/>
+            <ServiceCard title={"Frontend Development"}/>
+            <ServiceCard title={"Backend Development"}/>
+            <ServiceCard title={"Mobile Development"}/>
+            <ServiceCard title={"Game Development"}/>
+            <ServiceCard title={"Music"}/>
+            <ServiceCard title={"E-Learning"}/>
            
         </div>
 

@@ -27,7 +27,7 @@ const updateText = () => {
     updateText();
   }, []);
   return(
-    <div className='relative flex  flex-col md:flex-row border-1 px-5 md:px-20 min-h-screen '>
+    <div className='relative flex  flex-col md:flex-row border-1 px-5 md:px-20 min-h-full '>
     <div className='flex-1 flex justify-center flex-col'>
       <h5 className='text-md font-bold '>Hello there...</h5>
       <h1 className='text-4xl font-bold mt-4'>PAULINUS MFON</h1>

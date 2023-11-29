@@ -43,7 +43,7 @@ const AboutMe = () => {
 </div>
 <div className='flex items-center gap-2 mb-5'>
 <h4 className='text-sm  flex-1 font-bold '>LinkedIn</h4>
-<h4  className="text-sm flex-1  text-start text-[#786b6b]">mstrings11@gmail.com</h4>
+<h4  className="text-sm flex-1  text-start text-[#786b6b]">www.linkedin.com/in/mfon-paulinus-21ab5a1b9/</h4>
 </div>
 
   </div>

@@ -6,7 +6,7 @@ const ServiceCard = ({title}) => {
       <div className="hover:border-white border-2 w-24 h-24 rounded-full border-dotted border-orange-700 ">
 
       </div>
-      <h4 className="mt-4">{title}</h4>
+      <h4 className="mt-4 text-lg font-bold">{title}</h4>
       <p className="mt-4 ">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
     </div>
   )

@@ -8,6 +8,7 @@ import AboutMe from './AboutMe';
 import Services from './Services';
 import LatestWork from './LatestWork';
 import Contact from './Contact';
+import Experiences from './Experiences';
 
 const NavBar = () => {
   const [navBar, setNavBar] = useState(false);
@@ -66,8 +67,9 @@ const handleClick =()=>{
       <section className='pt-24'>
         <AboutMe/>
       </section>
-      <section className='h-screen flex justify-center items-center'>
-        <h2 className='text-2xl py-4'>Something Goes Here...</h2>
+      <section className='pt-10'>
+      <h2 className='px-3 text-3xl font-bold md:pl-20'>Experience</h2>
+      <Experiences/>
       </section>
       <section className=''>
         <Services/>

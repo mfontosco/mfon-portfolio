@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../assets/mfonsuit.png'
 
 const AboutMe = () => {
@@ -48,7 +49,7 @@ const AboutMe = () => {
 
   </div>
 </div>
-<button className='mt-3 mb-3 uppercase bg-orange-500 mr-3 text-sm py-3 px-4  text-white '>Download CV</button>
+<button className='mt-3 mb-3 uppercase bg-orange-500 mr-3 text-sm py-3 px-4  text-white '><Link to={"https://drive.google.com/file/d/1WKxv0s4M5GSQ5ALDq0ZBZ80YnmGD63_i/view?usp=sharing"}>Download CV</Link></button>
       </div>
     </div>
     </div>

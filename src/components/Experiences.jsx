@@ -5,12 +5,12 @@ import Frontend from "./Frontend"
 
 const Experiences = () => {
   return (
-    <div className=' gap-3 md:flex h-full w-full md:items-center px-5 md:px-20'>
-    <div className="md:flex-1 border border-black ">
+    <div className='pb-10 gap-3 md:flex h-full w-full md:items-center px-5 md:px-20'>
+    <div className="md:flex-1 shadow-md rounded-md ">
     <Frontend/>
     </div>
-    <div className="md:flex-1 border border-black ">
-    <Frontend/>
+    <div className="md:flex-1 shadow-md rounded-md">
+    <Backend/>
 
     </div>
      

@@ -1,32 +1,34 @@
 
 import { FaCheckSquare } from "react-icons/fa";
-const Backend = () => {
+import Skills from "./Skills";
+import express from "../assets/express.png"
+import node from '../assets/node.png'
+import docker from '../assets/docker.png'
+import postgres from '../assets/post.jpeg'
+import mongoDb from '../assets/mongodb.jpeg'
+import nest from '../assets/nest.jpeg'
+const Frontend = () => {
   return (
-    <div className='mt-4'>
-      <div className='border h-full  border-black rounded-md w-[350px]'>
+    <div className='h-full'>
+      <div className='border   '>
       <h1 className="text-xl font-bold mb-4 text-center">Backend Development</h1>
-        <div className="flex gap-3 flex-col md:flex  md:justify-center md:items-center">
-        
-       <div className="flex items-center justify-center gap-10 ">
-       <FaCheckSquare  size={"24px"}/> 
-        <div>
-        <h3 className="text-lg font-bold uppercase tracking-wide">NODEJS</h3>
-        <p>Experienced</p>
-        </div>
-       </div>
-       <div className="flex justify-center gap-10 ">
-       <FaCheckSquare  size={"24px"}/> 
-        <div>
-        <h3 className="text-lg font-bold uppercase tracking-wide">EXPRESS</h3>
-        <p>Experienced</p>
-        </div>
-       </div>
-        </div>
-        
+
+      <section className="flex flex-col md:flex-row overflow-hidden">
+          <div className="flex flex-col items-center justify-center w-full">
+                <Skills icon={express} heading={"Express"} content={"Experienced"}/>
+                <Skills icon={docker} heading={"Docker"} content={"Experienced"}/>
+                <Skills icon={postgres} heading={"Postgres"} content={"Experienced"}/>
+          </div>
+          <div className="flex flex-col items-center justify-center w-full">
+                <Skills icon={mongoDb} heading={"mongoDb"} content={"Experienced"}/>
+                <Skills  icon={nest} heading={"Nest"} content={"Experienced"}/>
+                <Skills icon={node} heading={"Node"} content={"Experienced"}/>
+          </div>
+      </section>
       </div>
     
     </div>
   )
 }
 
-export default Backend
+export default Frontend
